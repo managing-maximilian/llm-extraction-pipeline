@@ -1,0 +1,62 @@
+# ============================================================================
+#  Pipeline Configuration
+# ============================================================================
+#  Copy this file and adjust for your project.
+#  CLI flags (--input-dir, --steps, etc.) override these values.
+# ============================================================================
+
+# --- LLM ------------------------------------------------------------------
+llm:
+  provider: local              # "local", "openai", or "anthropic"
+
+  # Local model (llama-server) ------------------------------------------------
+  model_preset: qwen3.5-35b   # see MODEL_PRESETS in settings.py
+  # model_path: null           # set to skip preset and point to a .gguf file
+  llama_server_bin: /usr/local/bin/llama-server
+  llama_server_port: 8180
+  n_ctx: 65536
+  n_gpu_layers: -1             # -1 = offload all layers
+
+  # Cloud providers -----------------------------------------------------------
+  # model_name: gpt-4o         # required for openai / anthropic
+  # api_key: null               # or set OPENAI_API_KEY / ANTHROPIC_API_KEY env var
+
+  # Generation ----------------------------------------------------------------
+  temperature: 0.0
+  max_tokens: 32768
+  reasoning_budget: 16384      # -1 = unrestricted, 0 = disable, N>0 = cap
+
+# --- Auto-fixer (repairs malformed LLM JSON) --------------------------------
+fixer:
+  enabled: true
+  temperature: 0.0
+  max_tokens: 16000
+  reasoning_budget: 1024
+
+# --- Directories -------------------------------------------------------------
+input_dir: data/input
+output_dir: data/output
+
+# --- Pipeline ----------------------------------------------------------------
+steps_to_run:
+  - step1
+  # - step2                    # uncomment or add more steps here
+
+execution_mode: step_by_step   # "step_by_step" or "file_by_file"
+
+# --- Processing --------------------------------------------------------------
+output_language: German        # language the LLM should write its answers in
+prompt_language: en            # prompt template language ("en" or "de")
+continue_on_error: true
+save_raw_output: true
+save_prompts: true
+verbose: true
+
+# --- Per-step overrides (optional) -------------------------------------------
+# step1:
+#   custom_instructions: "Extra context appended to system prompt"
+#   llm:
+#     provider: openai
+#     model_name: gpt-4o
+#     api_key: sk-...
+#   output_dir: data/output/step1_custom
