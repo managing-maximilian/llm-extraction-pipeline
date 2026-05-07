@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "LLM Extraction Pipeline"
+type: software
+license: MIT
+authors:
+  - family-names: Sagadin
+    given-names: Suzana
+    affiliation: "Institute for Digital Humanities, University of Graz"
+  - family-names: Hadden
+    given-names: Richard
+    affiliation: "Institute for Digital Humanities, University of Graz"
+  - family-names: Tambuscio
+    given-names: Marcella
+    affiliation: "Institute for Digital Humanities, University of Graz"
+  - family-names: Vogeler
+    given-names: Georg
+    affiliation: "Institute for Digital Humanities, University of Graz"
+repository-code: "https://github.com/sagadin/llm-extraction-pipeline"
+date-released: "2025-01-01"
+abstract: >-
+  A reusable local-LLM information extraction pipeline developed as part of
+  the Managing Maximilian (ManMax) project, supported by the Austrian Science
+  Fund (FWF) within the Special Research Programme SFB F92 (DOI: 10.55776/F92).
+identifiers:
+  - type: doi
+    value: "10.55776/F92"
+    description: "FWF SFB F92 Managing Maximilian"

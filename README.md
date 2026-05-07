@@ -162,3 +162,21 @@ Set `provider: openai` or `provider: anthropic` in [config.yaml](config.yaml)
 and provide `model_name` + `api_key` (or set `OPENAI_API_KEY` /
 `ANTHROPIC_API_KEY` in the environment). Install the corresponding SDK from
 the commented section in [requirements.txt](requirements.txt).
+
+## Citation
+
+If you use this software, please cite it using the metadata in
+[CITATION.cff](CITATION.cff):
+
+> Sagadin, S., Hadden, R., Tambuscio, M., & Vogeler, G. (2025).
+> *LLM Extraction Pipeline* [Software]. Managing Maximilian (ManMax).
+> Institute for Digital Humanities, University of Graz.
+> https://github.com/sagadin/llm-extraction-pipeline
+
+## Acknowledgements
+
+This software was developed as part of the [Managing Maximilian (ManMax)](https://www.oeaw.ac.at/imafo/forschung/editionsunternehmen-quellenforschungmir/managing-maximilian-sfb/managing-maximilian-1493-1519) project at the Institute for Digital Humanities, University of Graz, supported by the Austrian Science Fund (FWF) within the Special Research Programme SFB F92 Managing Maximilian (DOI: [10.55776/F92](https://doi.org/10.55776/F92)).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
