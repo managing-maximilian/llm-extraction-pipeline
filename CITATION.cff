@@ -16,7 +16,7 @@ authors:
   - family-names: Vogeler
     given-names: Georg
     affiliation: "Institute for Digital Humanities, University of Graz"
-repository-code: "https://github.com/sagadin/llm-extraction-pipeline"
+repository-code: "https://github.com/managing-maximilian/llm-extraction-pipeline"
 date-released: "2025-01-01"
 abstract: >-
   A reusable local-LLM information extraction pipeline developed as part of

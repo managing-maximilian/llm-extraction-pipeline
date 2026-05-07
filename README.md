@@ -29,18 +29,18 @@ parser + auto-fixer, and a single placeholder `step1` that you replace.
 
 ## What you get
 
-| File | Purpose |
-|---|---|
-| [pipeline/run.py](pipeline/run.py) | Step runner — `step_by_step` and `file_by_file` execution modes, log tee-ing, error handling, input-dir chaining |
-| [pipeline/settings.py](pipeline/settings.py) | Pydantic settings + `MODEL_PRESETS` + YAML loader |
-| [pipeline/provider.py](pipeline/provider.py) | Auto-spawns `llama-server`; also supports OpenAI / Anthropic |
-| [pipeline/parser.py](pipeline/parser.py) | Extracts JSON from LLM output, validates against Pydantic, auto-fixes malformed responses via a follow-up LLM call |
-| [pipeline/helpers.py](pipeline/helpers.py) | `load_json`, `save_json`, `preserve_metadata`, `save_prompt`, `save_raw`, `get_text` |
-| [pipeline/steps/step1.py](pipeline/steps/step1.py) | Placeholder step — replace this |
-| [pipeline/prompts/step1.py](pipeline/prompts/step1.py) | Placeholder prompt — replace this |
-| [pipeline/models/step1.py](pipeline/models/step1.py) | Placeholder Pydantic output model — replace this |
-| [config.yaml](config.yaml) | All runtime configuration |
-| [data/input/example.json](data/input/example.json) | Example input file |
+| File                                                   | Purpose                                                                                                            |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| [pipeline/run.py](pipeline/run.py)                     | Step runner — `step_by_step` and `file_by_file` execution modes, log tee-ing, error handling, input-dir chaining   |
+| [pipeline/settings.py](pipeline/settings.py)           | Pydantic settings + `MODEL_PRESETS` + YAML loader                                                                  |
+| [pipeline/provider.py](pipeline/provider.py)           | Auto-spawns `llama-server`; also supports OpenAI / Anthropic                                                       |
+| [pipeline/parser.py](pipeline/parser.py)               | Extracts JSON from LLM output, validates against Pydantic, auto-fixes malformed responses via a follow-up LLM call |
+| [pipeline/helpers.py](pipeline/helpers.py)             | `load_json`, `save_json`, `preserve_metadata`, `save_prompt`, `save_raw`, `get_text`                               |
+| [pipeline/steps/step1.py](pipeline/steps/step1.py)     | Placeholder step — replace this                                                                                    |
+| [pipeline/prompts/step1.py](pipeline/prompts/step1.py) | Placeholder prompt — replace this                                                                                  |
+| [pipeline/models/step1.py](pipeline/models/step1.py)   | Placeholder Pydantic output model — replace this                                                                   |
+| [config.yaml](config.yaml)                             | All runtime configuration                                                                                          |
+| [data/input/example.json](data/input/example.json)     | Example input file                                                                                                 |
 
 The placeholder `step1` performs a small example extraction — it pulls
 `persons` (with optional `role`) and `events` (with the persons involved)
@@ -60,7 +60,7 @@ prompt with your own schema.
    ```yaml
    llm:
      llama_server_bin: /path/to/llama.cpp/build/bin/llama-server
-     model_preset: qwen3.5-35b   # or any other preset in settings.py
+     model_preset: qwen3.5-35b # or any other preset in settings.py
    ```
 
    The model GGUF is pulled from HuggingFace on first run.
@@ -93,7 +93,7 @@ Edit [config.yaml](config.yaml):
 
 Replace [models/step1.py](pipeline/models/step1.py) with the structure
 you want the LLM to return. The Pydantic model is used both for validation
-*and* shown to the LLM as an example via `get_example_output()`.
+_and_ shown to the LLM as an example via `get_example_output()`.
 
 ### 3. Write your prompt
 
@@ -169,9 +169,9 @@ If you use this software, please cite it using the metadata in
 [CITATION.cff](CITATION.cff):
 
 > Sagadin, S., Hadden, R., Tambuscio, M., & Vogeler, G. (2025).
-> *LLM Extraction Pipeline* [Software]. Managing Maximilian (ManMax).
+> _LLM Extraction Pipeline_ [Software]. Managing Maximilian (ManMax).
 > Institute for Digital Humanities, University of Graz.
-> https://github.com/sagadin/llm-extraction-pipeline
+> https://github.com/managing-maximilian/llm-extraction-pipeline
 
 ## Acknowledgements
 
