@@ -17,7 +17,7 @@ authors:
     given-names: Georg
     affiliation: "Institute for Digital Humanities, University of Graz"
 repository-code: "https://github.com/managing-maximilian/llm-extraction-pipeline"
-date-released: "2025-01-01"
+date-released: "2026-05-08"
 abstract: >-
   A reusable local-LLM information extraction pipeline developed as part of
   the Managing Maximilian (ManMax) project, supported by the Austrian Science
