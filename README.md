@@ -166,7 +166,7 @@ the commented section in [requirements.txt](requirements.txt).
 If you use this software, please cite it using the metadata in
 [CITATION.cff](CITATION.cff):
 
-> Sagadin, S., Hadden, R., Tambuscio, M., & Vogeler, G. (2025).
+> Sagadin, S., Hadden, R., Tambuscio, M., & Vogeler, G. (2026).
 > _LLM Extraction Pipeline_ [Software]. Managing Maximilian (ManMax).
 > Institute for Digital Humanities, University of Graz.
 > https://github.com/managing-maximilian/llm-extraction-pipeline
