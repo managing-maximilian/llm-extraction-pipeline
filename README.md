@@ -15,12 +15,10 @@ pipeline.
 
 ## Background
 
-The original pipeline (in the parent repository under [`pipeline/`](../pipeline/))
-extracts **prosopographical statements** from historical source texts (regesta,
-digests, charters) and turns them into ManMax-compatible factoids for the APIS
+The original pipeline extracts **prosopographical statements** from historical source texts (digests, charters, letters, ...) and turns them into ManMax-compatible factoids for the APIS
 database. It runs locally on a single GPU via
 [`llama-server`](https://github.com/ggml-org/llama.cpp) with a Qwen GGUF model,
-chained over ~12 steps (translation → statement extraction → typing → nesting →
+chained over ~12 steps (translation (optional) → statement extraction → typing → nesting →
 semantic-field extraction → APIS JSON).
 
 This template strips all of that domain content out and keeps only the
