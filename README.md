@@ -168,7 +168,7 @@ If you use this software, please cite it using the metadata in
 
 > Sagadin, S., Hadden, R., Tambuscio, M., & Vogeler, G. (2026).
 > _LLM Extraction Pipeline_ [Software]. Managing Maximilian (ManMax).
-> Institute for Digital Humanities, University of Graz.
+> Department of Digital Humanities, University of Graz /GitHub.
 > https://github.com/managing-maximilian/llm-extraction-pipeline
 
 ## Acknowledgements
